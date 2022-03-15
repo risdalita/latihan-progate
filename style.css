@@ -1,41 +1,38 @@
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 /*header*/
-.header{
-  background-color:	#f0f8fe;
-  height:90px;
+.header {
+  background-color: #f0f8fe;
+  height: 90px;
 }
 
-.header-logo{
+.header-logo {
   float: left;
-  font-size:36px;
-  padding:20px 40px;
-  
+  font-size: 36px;
+  padding: 20px 40px;
 }
 
-.header-list ul{
-  float:right;
-  margin-top:20px;
-  font-size:15px;
-  
+.header-list ul {
+  float: right;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
-.header-list li{
-  float:left;
-  list-style:none;
-  padding:39px;
+.header-list li {
+  float: left;
+  list-style: none;
+  padding: 39px;
 }
-.header-list a:hover{
+.header-list a:hover {
   font-weight: bold;
 }
-.header a{
-  color:black;
-  text-decoration:none;
+.header a {
+  color: black;
+  text-decoration: none;
 }
 
 /* main */
@@ -46,6 +43,7 @@
   background-image: url(img-bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -55,7 +53,6 @@
 }
 .content {
   width: 500px;
-  
 }
 
 .content h1 {
@@ -70,7 +67,7 @@
 }
 
 .content p {
-  color : #ffff;
+  color: #ffff;
   letter-spacing: 2px;
 }
 
@@ -78,9 +75,8 @@
   margin-top: 20px;
 }
 
-.btn, .btn1 {
-
-  padding: 10px 30px;
+.btn,
+.btn1 {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
@@ -91,62 +87,63 @@
 }
 
 .btn {
-    background-color: #00bcd4;
+  padding: 10px 36px;
+  background-color: #00bcd4;
   color: #fff;
 }
 
 .btn1 {
+  padding: 10px 30px;
   background-color: white;
   color: black;
   text-decoration: none;
 }
 
-.btn:hover { 
+.btn:hover {
   opacity: 1;
 }
-.btn1:hover { 
+.btn1:hover {
   opacity: 1;
 }
-
 
 .lesson {
-  float:left;
-  width:33%;
+  float: left;
+  width: 33%;
 }
-.lesson-wrapper{
+.lesson-wrapper {
   background-color: #fff;
   width: 960px;
   margin: 0 auto;
 }
-.heading{
+.heading {
   text-align: center;
 }
 .lesson-icon p {
-  position:absolute;
-  top:90;
-  width:100px;
-  color:black;
+  position: absolute;
+  top: 90;
+  width: 100px;
+  color: black;
 }
-.lesson-icon{
-  position:relative;
+.lesson-icon {
+  position: relative;
 }
 
-.txt-contents{
-  width:80%;
-  display:inline-block;
-  margin-top:20px;
-  font-size:15px;
-  color:black;
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: black;
 }
-.rata{
+.rata {
   text-align: center;
 }
 /* akhir main */
-footer{
+footer {
   margin: 0 auto;
   height: 650px;
 }
-.footer-ready{
+.footer-ready {
   width: 100%;
   height: 400px;
   background-image: url(footer.jpg);
@@ -155,54 +152,53 @@ footer{
   display: block;
   position: relative;
 }
-.footer-ready-child{
-    background-color: rgba(10, 20, 68, 0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    
+.footer-ready-child {
+  background-color: rgba(10, 20, 68, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
-.title-1{
+.title-1 {
   margin-top: 100px;
   margin-bottom: 25px;
   color: white;
 }
-.content-1{
+.content-1 {
   margin: auto;
   color: rgb(232, 231, 236);
 }
-.footer-contact{
-  background-color: #083C77;
+.footer-contact {
+  background-color: #083c77;
   height: 250px;
-  margin:auto;
+  margin: auto;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
 }
-.footer-contact{
-  color:white
+.footer-contact {
+  color: white;
 }
-.blue-text{
+.blue-text {
   color: #00bcd4;
 }
-.social-media{
-  margin:20 px 0;
+.social-media {
+  margin: 20 px 0;
 }
-.social-media a{
+.social-media a {
   color: #fff;
   margin-right: 25px;
   font-size: 22px;
   text-decoration: none;
 }
-.social-media a:hover{
+.social-media a:hover {
   color: #2196f3;
 }
-.btn2{
+.btn2 {
   padding: 10px;
   display: inline-block;
   text-decoration: none;
@@ -216,6 +212,20 @@ footer{
   font-size: small;
   box-shadow: 0px 3px 7px 2px rgba(32, 230, 220, 0.452);
 }
-.btn2:hover{
+.btn2:hover {
   opacity: 1;
+}
+
+/* media query */
+@media (max-width: 670px) {
+  .sidebar img {
+    width: 100px;
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+    padding-right: 50px;
+  }
 }
