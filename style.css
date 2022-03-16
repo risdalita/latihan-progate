@@ -333,6 +333,21 @@ footer {
   }
 }
 
+.flekbok{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+}
+.konten{
+  margin:30px;
+}
+.konten p{
+  width: 200px;
+}
+.konten img{
+  height: 200px;
+}
+
 @media screen and (max-width:960px) {
   .flekbok{
     flex-direction: column;
