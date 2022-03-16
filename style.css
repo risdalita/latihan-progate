@@ -6,6 +6,7 @@
 }
 /*header*/
 .header {
+  width: 100%;
   background-color: #f0f8fe;
   height: 90px;
 }
@@ -38,7 +39,7 @@
 /* main */
 
 .main {
-  width: 100%;
+  width:auto;
   height: 700px;
   background-image: url(img-bg2.jpg);
   background-repeat: no-repeat;
@@ -47,12 +48,14 @@
 }
 
 .container {
-  width: 960px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0);
-  margin: 0 auto;
+
 }
 .content {
   width: 500px;
+  padding-left: 72px;
+  padding-right: -70px;
 }
 
 .content h1 {
@@ -112,7 +115,7 @@
 }
 .lesson-wrapper {
   background-color: #fff;
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
 }
 .heading {
@@ -215,17 +218,117 @@ footer {
 .btn2:hover {
   opacity: 1;
 }
+.menu-icon {
+    color: black;
+    float: right;
+    font-size: 25px;
+    padding: 38px 24px;
+    display: none;
+    
+}
+
 
 /* media query */
-@media (max-width: 670px) {
+/*tablet */
+
+@media (max-width: 1000px) {
   .sidebar img {
-    width: 100px;
+    display:none;
+  }
+
+  .menu-icon {
     display: block;
+  }
+
+  .header-list {
+    display: none;
+  }
+  
+  .content {
+    padding-top: 140px;
+  }
+}
+
+
+/*phone */
+
+@media (max-width: 670px) {
+ .header {
+  padding-bottom: 55px;
+ }
+
+  .sidebar img {
+    display:none;
+  }
+
+  .menu-icon {
+    display:block
+  }
+
+  .header-list {
+    display:none
   }
 
   .content {
     width: 100%;
     text-align: center;
     padding-right: 50px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    padding-left: 24px;
+    width: 240px;
+    
+  }
+
+  .content p {
+    padding-left: 24px;
+    padding-top: 20px;
+  }
+
+  .content h1 span {
+    font-size: 45px;
+  }
+
+  .lessons {
+    width: 100%;
+  }
+
+  .header-logo a {
+    text-align:left;
+  }
+
+  .button-wrapper {
+    padding-left: 24px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn1 {
+    width: 100%
+  }
+
+  .footer-contact {
+    padding-top: 18px;
+    height: 420px;
+  }
+  
+  .foot-right {
+    line-height: 28px;
+  }
+
+  .foot-right h2 {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+  .foot-right p {
+    font-size: 14px;
+    padding-bottom: 5px;
   }
 }
