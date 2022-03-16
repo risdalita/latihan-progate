@@ -332,3 +332,14 @@ footer {
     padding-bottom: 5px;
   }
 }
+
+@media screen and (max-width:960px) {
+  .flekbok{
+    flex-direction: column;
+  }
+  .konten{
+    margin: auto;
+    margin-bottom: 20px;
+    
+  }
+}
